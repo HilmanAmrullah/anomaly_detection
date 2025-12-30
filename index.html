@@ -397,27 +397,5 @@ TingkatKesiapan =
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // date/year
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("today").textContent = new Date().toLocaleDateString("id-ID");
-
-    // Dark mode toggle (Bootstrap theme)
-    const root = document.documentElement;
-    const btn = document.getElementById("themeBtn");
-    const saved = localStorage.getItem("theme");
-    if (saved) root.setAttribute("data-bs-theme", saved);
-
-    // set initial label
-    btn.textContent = (root.getAttribute("data-bs-theme") === "dark") ? "Light" : "Dark";
-
-    btn.onclick = () => {
-      const cur = root.getAttribute("data-bs-theme") || "light";
-      const next = cur === "dark" ? "light" : "dark";
-      root.setAttribute("data-bs-theme", next);
-      localStorage.setItem("theme", next);
-      btn.textContent = next === "dark" ? "Light" : "Dark";
-    };
-  </script>
 </body>
 </html>
