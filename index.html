@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anomaly Detection Toolkit — Portal & Dokumentasi</title>
+  <meta name="description" content="Portal informasi, dokumentasi, dan distribusi Anomaly Detection Readiness & Method Selection Toolkit (Excel-Based)." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 92px; }
+
+    .brand-dot{
+      width:10px;height:10px;border-radius:50%;
+      background:linear-gradient(135deg,#0d6efd,#20c997);
+      display:inline-block;
+    }
+    .box{
+      border:1px solid var(--bs-border-color);
+      border-radius:14px;
+      background:var(--bs-body-bg);
+    }
+    .badge-soft{
+      border:1px solid var(--bs-border-color);
+      background: rgba(13,110,253,.06);
+      padding:.35rem .65rem;
+      border-radius:999px;
+      font-weight:600;
+      color: var(--bs-secondary-color);
+    }
+    .feature-icon{
+      width:42px;height:42px;border-radius:12px;
+      background:rgba(13,110,253,.10);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;
+      flex:0 0 auto;
+    }
+    [data-bs-theme="dark"] .feature-icon{
+      background:rgba(96,165,250,.18);
+    }
+    .mini-note{font-size:.875rem;color:var(--bs-secondary-color)}
+    pre{
+      border-radius:12px;
+      border:1px solid var(--bs-border-color);
+      padding:12px;
+      overflow:auto;
+      margin:0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top bg-body">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+        <span class="brand-dot"></span> Anomaly Detection Toolkit
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#manfaat">Manfaat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cara">Cara Pakai</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tim">Tim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+
+        <div class="ms-lg-3 d-flex gap-2 mt-2 mt-lg-0">
+          <a class="btn btn-primary btn-sm" href="#download">Download</a>
+          <button id="themeBtn" class="btn btn-outline-secondary btn-sm" type="button">Dark</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <!-- HERO / LANDING -->
+    <section id="home" class="box p-4 mb-4">
+      <div class="d-flex flex-wrap gap-2 mb-2">
+        <span class="badge-soft">Portal Informasi</span>
+        <span class="badge-soft">Distribusi Produk</span>
+        <span class="badge-soft">Excel-Based</span>
+        <span class="badge-soft">v1.0</span>
+      </div>
+
+      <div class="row align-items-center g-3">
+        <div class="col-lg-7">
+          <h1 class="h3 fw-bold mt-1 mb-2">
+            Anomaly Detection Readiness & Method Selection Toolkit
+          </h1>
+          <p class="text-secondary mb-3">
+            Toolkit untuk <b>menilai kesiapan data</b> dan <b>menentukan metode anomaly detection</b>
+            secara terstruktur, mudah dipahami, dan tanpa coding.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary" href="#download">⬇️ Download Toolkit</a>
+            <a class="btn btn-outline-secondary" href="#cara">📘 Cara Pakai (Lengkap)</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="border rounded-4 p-3">
+            <div class="fw-bold mb-1">Preview</div>
+    
+            <!-- OPSIONAL: kalau mau pakai gambar, hapus komentar di bawah -->
+            
+            <img class="img-fluid rounded-3 border mt-3" src="gambar1.png" alt="Preview Toolkit">
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANFAAT -->
+    <section id="manfaat" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-2">Manfaat</h2>
+      <p class="text-secondary mb-3">Kenapa toolkit ini membantu?</p>
+
+      <div class="row g-3">
+        <div class="col-md-4 d-flex gap-3">
+          <div class="feature-icon">✅</div>
+          <div>
+            <div class="fw-bold">Cepat & Terstruktur</div>
+            <div class="text-secondary small">Checklist & skor otomatis untuk menilai kesiapan data.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex gap-3">
+          <div class="feature-icon">📌</div>
+          <div>
+            <div class="fw-bold">Mudah Dipakai</div>
+            <div class="text-secondary small">Cukup isi Ya/Tidak, hasil kesimpulan muncul otomatis.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex gap-3">
+          <div class="feature-icon">🧠</div>
+          <div>
+            <div class="fw-bold">Dukung Keputusan</div>
+            <div class="text-secondary small">Panduan memilih metode sesuai kondisi data.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR -->
+    <section id="fitur" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-2">Fitur Utama</h2>
+      <p class="text-secondary mb-3">Komponen inti yang ada di toolkit.</p>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold mb-2">Komponen</div>
+            <ul class="text-secondary mb-0">
+              <li>Data Overview</li>
+              <li>Readiness Checklist (Ya=1, Tidak=0)</li>
+              <li>Scoring & Kesimpulan Kesiapan</li>
+              <li>Method Selection Guide</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+      <section id="download" class="box p-4 mb-4">
+        <h2 class="h5 fw-bold mb-2">Download</h2>
+        <p class="text-secondary mb-3">Akses langsung toolkit Excel.</p>
+
+        <div class="d-flex flex-column flex-md-row gap-2 align-items-md-center justify-content-between border rounded-4 p-3">
+          <div>
+            <div class="fw-bold">Anomaly_Detection_Toolkit.xlsx</div>
+            <div class="text-secondary small">
+              Versi 1.0 • Format Excel • Disarankan dibuka di Microsoft Excel
+            </div>
+          </div>
+
+          <div class="d-grid d-md-flex gap-2">
+            <!-- FILE LOKAL, LANGSUNG DOWNLOAD -->
+            <a class="btn btn-primary"
+              href="Anomaly_Detection_Toolkit.xlsx"
+              download>
+              ⬇️ Download Sekarang
+            </a>
+
+            <a class="btn btn-outline-secondary" href="#cara">
+              Lihat Cara Pakai
+            </a>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- CARA PAKAI (LENGKAP) -->
+    <section id="cara" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-2">Cara Pakai (Lengkap)</h2>
+      <p class="text-secondary mb-3">
+        Ikuti urutan ini biar hasil skor & rekomendasi metodenya benar.
+      </p>
+
+      <!-- 0) Persiapan -->
+      <div class="border rounded-4 p-3 mb-3">
+        <div class="fw-bold mb-2">0) Persiapan (wajib dibaca)</div>
+        <ul class="text-secondary mb-0">
+          <li><b>Disarankan pakai Microsoft Excel</b> (rumus & format paling aman). Google Sheets bisa, tapi kadang format/range berubah.</li>
+          <li><b>Jangan hapus</b> sel yang ada rumusnya (biasanya kolom skor & total).</li>
+          <li>Kalau ada dropdown Ya/Tidak, gunakan dropdown. Kalau tidak ada, ketik konsisten: <b>Ya</b> / <b>Tidak</b> (jangan campur “ya/YES/iya”).</li>
+        </ul>
+      </div>
+
+      <!-- 1) Quick Start -->
+      <div class="border rounded-4 p-3 mb-3">
+        <div class="fw-bold mb-2">1) Quick Start (4 langkah cepat)</div>
+        <ol class="text-secondary mb-0">
+          <li><b>Download</b> file toolkit Excel.</li>
+          <li><b>Buka</b> di Excel.</li>
+          <li><b>Isi Data Overview</b> (informasi dataset).</li>
+          <li><b>Isi Readiness Checklist</b> (Ya/Tidak) → lihat <b>Total Skor</b> → baca <b>Tingkat Kesiapan</b> → gunakan <b>Method Selection</b>.</li>
+        </ol>
+      </div>
+
+      <!-- 2) Cara isi per sheet -->
+      <div class="border rounded-4 p-3 mb-3">
+        <div class="fw-bold mb-2">2) Cara Isi per Bagian (detail)</div>
+
+        <!-- A. Data Overview -->
+        <div class="mb-3">
+          <div class="fw-bold">A) Data Overview (isi manual / diketik)</div>
+          <div class="text-secondary small mb-2">Tujuan: memberi gambaran dataset sebelum cek kesiapan.</div>
+          <ul class="text-secondary mb-0">
+            <li><b>Nama dataset</b>: contoh “Transaksi Minimarket 2024”.</li>
+            <li><b>Jenis data</b>: Time-series / Transaksi / Log / Sensor / Lainnya.</li>
+            <li><b>Jumlah record</b>: jumlah baris data (mis. 10.000).</li>
+            <li><b>Jumlah atribut</b>: jumlah kolom fitur (mis. 12).</li>
+            <li><b>Ada label anomali?</b>: Ya jika dataset punya kolom label anomali (mis. 0/1 atau normal/anomali).</li>
+            <li><b>Missing value (%)</b>: persentase nilai kosong. Contoh cara hitung: (jumlah sel kosong / total sel) × 100.</li>
+            <li><b>Catatan</b>: tulis 1–2 kalimat (mis. “data ada outlier harga ekstrem, kemungkinan promo/typo”).</li>
+          </ul>
+        </div>
+
+        <!-- B. Readiness Checklist -->
+        <div class="mb-3">
+          <div class="fw-bold">B) Readiness Checklist (Ya/Tidak)</div>
+          <div class="text-secondary small mb-2">Tujuan: menilai apakah data “siap” untuk anomaly detection.</div>
+
+          <div class="text-secondary small mb-2"><b>Cara isi:</b></div>
+          <ol class="text-secondary mb-2">
+            <li>Baca kriteria pada baris checklist.</li>
+            <li>Pilih <b>Ya</b> kalau dataset memenuhi kriteria itu.</li>
+            <li>Pilih <b>Tidak</b> kalau belum memenuhi.</li>
+          </ol>
+
+          <div class="text-secondary small mb-2"><b>Contoh patokan keputusan (biar jelas):</b></div>
+          <ul class="text-secondary mb-0">
+            <li><b>Missing value rendah?</b> → Ya kalau missing kecil (contoh &lt; 5–10%), Tidak kalau besar.</li>
+            <li><b>Format konsisten?</b> → Ya kalau tanggal/angka rapi dan satu format, Tidak kalau campur-campur.</li>
+            <li><b>Duplikasi terkendali?</b> → Ya kalau duplikat masuk akal/sudah dibersihkan, Tidak kalau duplikat liar.</li>
+            <li><b>Outlier ekstrem masuk akal?</b> → Ya kalau outlier bisa dijelaskan (kejadian nyata), Tidak kalau outlier karena error input.</li>
+          </ul>
+        </div>
+
+        <!-- C. Skoring -->
+        <div class="mb-3">
+          <div class="fw-bold">C) Scoring & Tingkat Kesiapan (otomatis)</div>
+          <div class="text-secondary small mb-2">Tujuan: dapat hasil akhir kesiapan berdasarkan jawaban checklist.</div>
+          <ul class="text-secondary mb-2">
+            <li>Skor umum: <b>Ya = 1</b>, <b>Tidak = 0</b>.</li>
+            <li><b>Total Skor</b> = penjumlahan skor semua item checklist.</li>
+            <li><b>Skor Maksimum</b> = jumlah item checklist (mis. 5 item → maksimum 5).</li>
+            <li><b>Tingkat Kesiapan</b> muncul (Siap / Cukup / Belum) sesuai batas skor.</li>
+          </ul>
+
+          <div class="text-secondary small"><b>Contoh rumus (umum dipakai):</b></div>
+          <pre class="mt-2"><code>TotalSkor = SUM(kolom_skor_checklist)
+TingkatKesiapan =
+  IF(TotalSkor >= 4, "SIAP",
+     IF(TotalSkor >= 2, "CUKUP SIAP", "BELUM SIAP"))</code></pre>
+
+          <div class="text-secondary small mt-2">
+            *Kalau checklist kamu lebih dari 5 item (mis. 8), batasnya tinggal disesuaikan (contoh: 7–8 Siap, 4–6 Cukup, 0–3 Belum).
+          </div>
+        </div>
+
+        <!-- D. Method Selection -->
+        <div>
+          <div class="fw-bold">D) Method Selection Guide (panduan metode)</div>
+          <div class="text-secondary small mb-2">Tujuan: memilih metode yang cocok berdasarkan kondisi data.</div>
+          <ol class="text-secondary mb-0">
+            <li>Lihat kondisi dataset kamu (besar/kecil, ada label/tidak, time-series atau bukan).</li>
+            <li>Cari baris yang paling cocok di tabel panduan.</li>
+            <li>Pilih metode yang disarankan + tulis alasan singkat di laporan.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 3) Output untuk laporan -->
+      <div class="border rounded-4 p-3 mb-3">
+        <div class="fw-bold mb-2">3) Output yang Wajib Dicatat</div>
+        <ul class="text-secondary mb-0">
+          <li>Ringkasan dataset: jenis data, jumlah record, jumlah atribut, missing value (%), ada label/tidak.</li>
+          <li>Hasil checklist: berapa “Ya” dan “Tidak” (boleh tabel ringkas).</li>
+          <li><b>Total Skor</b> dan <b>Tingkat Kesiapan</b>.</li>
+          <li>Metode yang dipilih dari Method Selection + alasan 1–2 kalimat.</li>
+        </ul>
+      </div>
+
+      <!-- 4) Kesalahan umum -->
+      <div class="border rounded-4 p-3">
+        <div class="fw-bold mb-2">4) Kesalahan Umum (hindari)</div>
+        <ul class="text-secondary mb-0">
+          <li>Menghapus sel rumus (skor tidak jalan).</li>
+          <li>Isi Ya/Tidak tidak konsisten (mis. “ya”, “YES”, “iya”).</li>
+          <li>Memindah kolom checklist tapi range SUM tidak ikut berubah.</li>
+          <li>Link download error karena link belum diganti.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-3">FAQ</h2>
+
+      <details open class="mb-2">
+        <summary class="fw-bold">Isinya dicoret atau diketik?</summary>
+        <div class="text-secondary mt-2">Diketik langsung di sel Excel (bukan dicoret).</div>
+      </details>
+
+      <details class="mb-2">
+        <summary class="fw-bold">Bisa dipakai tanpa label anomali?</summary>
+        <div class="text-secondary mt-2">Bisa, karena banyak metode anomaly detection bersifat <b>unsupervised</b>.</div>
+      </details>
+
+      <details>
+        <summary class="fw-bold">Kenapa skor saya tidak berubah?</summary>
+        <div class="text-secondary mt-2">
+          Biasanya karena jawaban tidak konsisten (mis. “YES”), atau sel rumus terhapus/tertiban.
+          Pastikan pakai Ya/Tidak sesuai format.
+        </div>
+      </details>
+    </section>
+
+    <!-- TIM -->
+    <section id="tim" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-2">Profil Tim</h2>
+      <p class="text-secondary mb-3">Informasi singkat pengembang.</p>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold">Chaerul Hidayat</div>
+            <div class="text-secondary small">Project Lead • Dokumentasi</div>
+            <div class="text-secondary small mt-2">Desain toolkit, penjelasan pengisian, validasi format.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold">Muhammad Reza Maulana</div>
+            <div class="text-secondary small">Referensi • Indikator</div>
+            <div class="text-secondary small mt-2">Rujukan indikator dan literatur pendukung.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold">Hilman AMR</div>
+            <div class="text-secondary small">UI/Design • Publikasi</div>
+            <div class="text-secondary small mt-2">Landing page, tampilan, dan distribusi file.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="box p-4 mb-4">
+      <h2 class="h5 fw-bold mb-2">Kontak</h2>
+      <p class="text-secondary mb-1">Email:</p>
+      <div class="fw-bold">chaerulhidayat@mhs.pelitabangsa.ac.id</div>
+    </section>
+
+    <footer class="text-center text-secondary small mb-4">
+      © <span id="year"></span> Anomaly Detection Toolkit
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // date/year
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("today").textContent = new Date().toLocaleDateString("id-ID");
+
+    // Dark mode toggle (Bootstrap theme)
+    const root = document.documentElement;
+    const btn = document.getElementById("themeBtn");
+    const saved = localStorage.getItem("theme");
+    if (saved) root.setAttribute("data-bs-theme", saved);
+
+    // set initial label
+    btn.textContent = (root.getAttribute("data-bs-theme") === "dark") ? "Light" : "Dark";
+
+    btn.onclick = () => {
+      const cur = root.getAttribute("data-bs-theme") || "light";
+      const next = cur === "dark" ? "light" : "dark";
+      root.setAttribute("data-bs-theme", next);
+      localStorage.setItem("theme", next);
+      btn.textContent = next === "dark" ? "Light" : "Dark";
+    };
+  </script>
+</body>
+</html>
